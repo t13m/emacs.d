@@ -132,7 +132,8 @@
 (require 'init-outl-minor)
 
 ;; use C-u C-u C-s/r to trigger the flexible search action
-(require 'init-flex-isearch)
+;; Commented for flex-isearch triggered a lot of warnings at startup.
+;;(require 'init-flex-isearch)
 
 ;; set some compilation shortcuts
 (require 'init-compile)
