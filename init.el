@@ -85,7 +85,7 @@
 ;; (require 'init-html)
 ;; (require 'init-css)
 ;; (require 'init-haml)
-;; (require 'init-python-mode)
+(require 'init-python)
 (require 'init-haskell)
 ;; (require 'init-ruby-mode)
 ;; (require 'init-rails)
@@ -157,5 +157,12 @@
 
 (setq default-buffer-file-coding-system 'utf-8)
 (prefer-coding-system 'utf-8)
+
+;;----------------------------------------------------------------------------
+;; ;; Key-bindings
+;;----------------------------------------------------------------------------
+
+(global-set-key (kbd "C-x 0") 'switch-window-then-delete)
+(global-set-key (kbd "C-x 1") 'delete-other-windows)
 
 (provide 'init)

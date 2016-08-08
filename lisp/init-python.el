@@ -1,0 +1,10 @@
+;;(setq package-archives
+;;      (append '(("elpy" . "http://jorgenschaefer.github.io/packages/"))
+;;              package-archives))
+(require-package 'pyvenv)
+(require-package 'highlight-indentation)
+(require-package 'elpy)
+(package-initialize)
+(elpy-enable)
+(elpy-use-ipython)
+(provide 'init-python)
