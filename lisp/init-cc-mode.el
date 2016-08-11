@@ -1,0 +1,6 @@
+;;(require-package 'cmake-ide)
+;;(cmake-ide-setup)
+(setq c-default-style "stroustrup")
+(setq-default indent-tabs-mode nil)
+(setq-default tab-width 4)
+(provide 'init-cc-mode)

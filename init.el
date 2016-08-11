@@ -87,6 +87,7 @@
 ;; (require 'init-haml)
 (require 'init-python)
 (require 'init-haskell)
+(require 'init-cc-mode)
 ;; (require 'init-ruby-mode)
 ;; (require 'init-rails)
 ;; (require 'init-sql)
@@ -164,5 +165,10 @@
 
 (global-set-key (kbd "C-x 0") 'switch-window-then-delete)
 (global-set-key (kbd "C-x 1") 'delete-other-windows)
+
+;;----------------------------------------------------------------------------
+;; ;; Performance
+;;----------------------------------------------------------------------------
+(setq gc-cons-threshold 100000000) ; ie 100mb, default is 800kb
 
 (provide 'init)
